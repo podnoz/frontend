@@ -1,0 +1,47 @@
+<div class="recepie" fxLayout="row" fxLayout.xs="column" fxLayoutGap="15px">
+  <div fxFlex="60" fxLayout="column" fxLayoutGap="15px">
+    <div>
+        <button mat-mini-fab color="primary" (click)="goBack();"><mat-icon>arrow_back</mat-icon></button>
+        <button class="actions" mat-mini-fab color="primary"><mat-icon>add</mat-icon></button>  
+    </div>
+    
+
+
+
+
+      <mat-card class="pictureCard">
+          <img src="{{ recepie.imgUrl }}" alt="Photo of a Shiba Inu"> 
+      </mat-card>
+  
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>
+            {{ recepie.title }}
+          </mat-card-title>
+          <mat-card-subtitle>
+            {{ recepie.subTitle }}
+          </mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          {{ recepie.description }}
+        </mat-card-content>
+      </mat-card>
+
+  </div>
+  <div fxFlex="40" fxLayout="column" fxLayoutGap="15px">
+      <mat-card>
+        <mat-selection-list #ingredients color="primary">
+          <mat-list-option color="primary" *ngFor="let ingredient of recepie.ingredients"> 
+            {{ ingredient.name }} - {{ ingredient.quantity }}
+          </mat-list-option>
+        </mat-selection-list>
+      </mat-card>
+
+      <mat-card *ngFor="let step of recepie.steps; let i = index;">
+          <mat-card-title>Krok {{ i + 1  }}</mat-card-title>
+          <mat-card-content>
+            {{ step.content }}
+          </mat-card-content>
+        </mat-card>
+  </div>
+</div>

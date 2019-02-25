@@ -1,0 +1,79 @@
+@import "~@angular/material/theming";
+
+@include mat-core();
+
+$green-primary-color: (
+    50 : #e7f9e7,
+    100 : #c2f0c2,
+    200 : #99e699,
+    300 : #70db70,
+    400 : #52d452,
+    500 : #33cc33,
+    600 : #2ec72e,
+    700 : #27c027,
+    800 : #20b920,
+    900 : #14ad14,
+    A100 : #e0ffe0,
+    A200 : #adffad,
+    A400 : #7aff7a,
+    A700 : #60ff60,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+
+$blue-accent-color: (
+    50 : #e0f6fd,
+    100 : #b3e9f9,
+    200 : #80daf5,
+    300 : #4dcbf1,
+    400 : #26bfee,
+    500 : #00b4eb,
+    600 : #00ade9,
+    700 : #00a4e5,
+    800 : #009ce2,
+    900 : #008cdd,
+    A100 : #ffffff,
+    A200 : #d1ecff,
+    A400 : #9ed7ff,
+    A700 : #72CDF4,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+  
+$primary: mat-palette($green-primary-color);
+$accent:  mat-palette($blue-accent-color);
+$warn: mat-palette($mat-red);
+$podnoz-theme: mat-light-theme($primary, $accent, $warn);
+
+@include angular-material-theme($podnoz-theme);
+

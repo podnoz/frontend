@@ -1,0 +1,52 @@
+.recepie-card {
+    width: 400px;
+    border-radius: 10px;
+    margin: 25px;
+    
+    &:hover {
+        opacity: 0.8;
+    }
+
+    .mat-card-image {
+    }
+
+    
+}
+
+.mat-card-avatar > img {
+    height: 40px;
+    opacity: 0.4;
+}
+
+.full-diet-card {
+    margin: 25px 25px 0 25px;
+    border-radius: 10px;
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    .mat-card-image {
+        height: 200px;
+        width: 100%;
+        object-fit: cover; 
+    }
+}
+
+.schedule-card {
+    margin: 25px 25px 0 25px;
+    border-radius: 10px;
+
+    .mat-card {
+        border-radius: 10px;
+        margin: 1px;
+        margin-top: 25px;
+    }
+
+    .mat-tab-group {
+    
+    }
+}
+
+.cards {
+}

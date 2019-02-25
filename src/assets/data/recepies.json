@@ -1,0 +1,65 @@
+[
+    {
+        "guid" : "1",
+        "title" : "Nocna owsianka",
+        "subTitle" : "Płatki oswiane, jabłko, banan",
+        "imgUrl" : "https://images.pexels.com/photos/90894/pexels-photo-90894.jpeg?cs=srgb&dl=berries-bowl-breakfast-90894.jpg&fm=jpg",
+        "description" : "Lekkie śniadanie dla każdego. Niesamowicie odżywcze i szybkie w przygotowaniu",
+        "price": "12,99",
+        "nutrients": "JSON - micro/makro",
+        "tags": "lista",
+        "required": "lista",
+        "ingredients" : [
+            {
+                "name" : "Płatki owsiane",
+                "quantity" : "100g"
+            },
+            {
+                "name" : "Banany",
+                "quantity" : "2 sztuki"
+            },
+            {
+                "name" : "Daktyle",
+                "quantity" : "50g"
+            },
+            {
+                "name" : "Siemie lniane",
+                "quantity" : "15g"
+            },
+            {
+                "name" : "Cynamon",
+                "quantity" : "1 łyżeczka"
+            },
+            {
+                "name" : "Maliny",
+                "quantity" : "50g"
+            }
+        ],
+        "steps" : [
+            {
+                "content" : "Dzień wcześniej wsyp płątki owsiane do miseczki, zalej przefilrowaną wodą i zostaw na całą noc w lodówce."
+            },
+            {
+                "content" : "Dodaj do płatków siemie lniane i cynamon, a następnie wymieszaj."
+            },
+            {
+                "content" : "Pokrój banany w plasterki, dodaj do owsianki i znowu wymieszaj"
+            },
+            {
+                "content" : "Na koniec dodaj daktyle i maliny na górę. Gotowe! Smaczengo :)"
+            }
+        ]
+    },
+    {
+        "guid" : "2",
+        "title" : "Zielone smoothie",
+        "subTitle" : "Szpinak, banan, mięta",
+        "imgUrl" : "https://images.pexels.com/photos/288496/pexels-photo-288496.jpeg?cs=srgb&dl=blue-delicious-drink-288496.jpg&fm=jpg"
+    },
+    {
+        "guid" : "3",
+        "title" : "Ryż z fasolą i sosem pomidorowym",
+        "subTitle" : "Ryż, fasola, pomidory",
+        "imgUrl" : "https://upload.wikimedia.org/wikipedia/commons/1/1b/Rajma_Rice.JPG"
+    }
+]
